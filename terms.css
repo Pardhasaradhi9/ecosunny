@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(carousel-2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    z-index: -1; /* Ensure the blur effect is behind the content */
+}
+.terms-box{
+    max-width: 960px;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 60px 30px;
+    border: #d13639;
+}
+.terms-content{
+    padding: 0 20px;
+    height: 400px;
+    overflow-y: auto;
+    font-size: 19px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.terms-content .audit{
+    margin-bottom: 10px;
+}
+.terms-content .greetings{
+    margin-bottom: 10px;
+}
+.terms-content::-webkit-scrollbar{
+    width: 4px;
+    background-color: #282828;
+}
+.terms-content::-webkit-scrollbar-thumb{
+    background-color: #d13639;
+}
+.terms-content h2{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.terms-box h4{
+    font-size: 13px;
+    text-align: center;
+    padding: 0 40px;
+    margin: 40px;
+}
+.terms-box h4 span{
+    color: #d13639;
+}
+.buttons{
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+}
+.btn{
+    height: 50px;
+    width: calc(50% - 6px);
+    border: none;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;;;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-red{
+    background-color: #bf0b05;
+}
+.btn-grey{
+    background-color: #282828;
+}
+.btn:hover{
+    opacity: 0.6;
+}
